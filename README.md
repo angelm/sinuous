@@ -14,3 +14,4 @@ From the root directory of the project, run:
 npm install
 npm start
 ```
+After running this commands, you should be able to access the project [here] (http://localhost:8080/).
