@@ -1,0 +1,84 @@
+$base_txt_color: #333 !default;
+$base_bgr_color: #ECEFF1 !default;
+
+.daily-tracker {
+
+    .timer {
+        position: relative;
+        background-color: #455A64;
+        color: #ECEFF1;
+
+        .clock {
+            font-size: 52px;
+            padding: 14px 12px 4px;
+            vertical-align: bottom;
+            line-height: 52px;
+        }
+
+        .control-panel {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            font-size: 28px;
+
+            .control {
+                margin-right: 6px;
+                cursor: pointer;
+
+                &.time {
+                    font-size: 48px;
+                    &:hover {
+                        font-size: 52px;
+                    }
+                }
+
+                &.stop {
+                    font-size: 36px;
+                }
+
+                &.reset {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+
+    .daily-summary {
+        background-color: #B0BEC5;
+        color: #1a1a1a;
+        padding: 4px;
+
+        .header {
+            font-weight: 900;
+            font-size: 1.2em;
+        }
+        .daily-totals {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .task-manager {
+        background-color: $base_bgr_color;
+        ol.inventory {
+            list-style-type: none;
+            padding: 4px 0;
+            li.task {
+                margin: 0;
+                padding: 8px;
+                color: $base_txt_color;
+                border-bottom: solid 1px lightgrey;
+
+                .project {
+                    font-weight: 900;
+                }
+
+                .unit {
+                    padding: 6px 4px 2px 0;
+                    color: #90A4AE;
+                }
+            }
+        }
+    }
+}
+
